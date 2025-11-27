@@ -1,0 +1,16 @@
+/users/student/pg/pg23/vaibhav.rathore/.local/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/project/train.py:128: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_ckpt_path))
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/project/checkpoints/PACS/bn2/checkpoint_PACS_epoch40.pth
+Traceback (most recent call last):
+  File "/users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/project/train.py", line 152, in <module>
+    test(test_dataloader,model_ckpt_path=model_ckpt_path)
+  File "/users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/project/train.py", line 128, in test
+    model.load_state_dict(torch.load(model_ckpt_path))
+  File "/users/student/pg/pg23/vaibhav.rathore/.local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 2584, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for InputModel:
+	Missing key(s) in state_dict: "mlp.10.weight", "mlp.10.bias", "mlp.10.running_mean", "mlp.10.running_var", "mlp.12.weight", "mlp.12.bias". 
+	size mismatch for mlp.9.weight: copying a param with shape torch.Size([256, 2048]) from checkpoint, the shape in current model is torch.Size([2048, 2048]).
+	size mismatch for mlp.9.bias: copying a param with shape torch.Size([256]) from checkpoint, the shape in current model is torch.Size([2048]).

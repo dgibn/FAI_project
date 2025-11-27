@@ -1,0 +1,26 @@
+/users/student/pg/pg23/vaibhav.rathore/.conda/envs/dgcd/lib/python3.12/site-packages/torch/nn/utils/weight_norm.py:134: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/train.py:123: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_ckpt_path))
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch80.pth
+Test Accuracy: 94.3556
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch60.pth
+Test Accuracy: 94.3333
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch100.pth
+Test Accuracy: 94.4444
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch10.pth
+Test Accuracy: 94.5556
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch40.pth
+Test Accuracy: 94.1111
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch90.pth
+Test Accuracy: 94.2222
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch50.pth
+Test Accuracy: 94.2889
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch70.pth
+Test Accuracy: 94.5111
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch20.pth
+Test Accuracy: 94.2667
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch30.pth
+Test Accuracy: 94.4667
+Evaluating model from checkpoint: /users/student/pg/pg23/vaibhav.rathore/D_GCD/DG/checkpoints/CIFAR/checkpoint_CIFAR10_epoch0.pth
+Test Accuracy: 94.9111
