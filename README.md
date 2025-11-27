@@ -22,15 +22,15 @@ CIFAR-10 – Standard multi-class dataset (10 classes)
 
 ## 🚀 Training
 
-To train the model, you can use the `train.sh` script. The model is trained on a specific dataset
+To train the model, you can use the `scripts/train.sh` script. The model is trained on a specific dataset
 
 ### Automated Training Script
 Use the provided bash script to automate training across multiple domains defined in the script:
 
 ```bash
-bash train.sh
+bash scripts/train.sh
 ```
-*Note: Edit `train.sh` to select the dataset you wish to train on.*
+*Note: Edit `train.sh` to select the dataset you wish to train on. and edit the dataloader files in ./data folder*
 
 🏆 Best Overall Configuration
 Dataset	Best Accuracy	Model Setting
